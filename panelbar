@@ -1,0 +1,29 @@
+background yes
+double_buffer yes
+own_window_class conky
+own_window yes
+own_window_type panel
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+draw_borders no
+draw_graph_borders no
+border_margin 1
+draw_shades no
+gap_x 0
+gap_y 0
+alignment bottom_middle
+update_interval 1
+default_color  ffffff
+own_window_transparent yes
+use_xft yes
+xftfont sans:size=6
+override_utf8_locale yes
+use_spacer none
+format_human_readable yes
+#minimum_size 1920 0
+minimum_size 1260 10
+maximum_width 1260 10
+TEXT
+${goto 5} ${color FF0000}${font sans:size=6} CreatorB dev ${color}${font sans:size=6}| Time : ${color 00FF00}${font sans:size=6}${time %H:%M:%S}${color 00FF00}${font} | ${font sans:size=6}${time %B %A %d.%m.%y}${color} | Up: ${color 00FF00}${font sans:size=6}${uptime_short}${color}${font} | Kernel: ${color 00FF00}${font sans:size=6}$kernel${color}${font} | Mem: ${color 00FF00} ${memperc}% ${membar 5,50} ${color}${font sans:size=6}| Cpu: ${color 00FF00}${font sans:size=6}${cpu}%${color}${font}  Temp: ${color 00FF00}${font sans:size=6}${acpitemp}°C${color}${font} Freq: ${color 00FF00}${font sans:size=6}${freq_g cpu0}Ghz${color}${font} ${color}${font}  |  ${color}${font}Hdd:${color 00FF00}${font sans:size=6} ${fs_used_perc /}% ${fs_used /} / ${fs_size /} ${color}Temp:${color 00FF00}${font sans:size=6} ${execpi 10 hddtemp -n /dev/sda}°C ${color}${font} |  ${color 00FF00}${font sans:size=6}${execi 3600 wget -O - http://ip.tupeux.com | tail}${color}${font}  |  ${color} ${if_existing /proc/net/route eth0}Network: ${color 82BA00}Up :${color} ${color 00FF00}${upspeed eth0} kb/s${color}  ${color 82BA00}Down :${color} ${color 00FF00}${downspeed } kb/s${color} ${color 82BA00}Total :${color} ${color 00FF00}${totaldown eth0}${color}${else}${if_existing /proc/net/route wlan0}${color 82BA00}${font sans:size=6}Up :${color}${font} ${color 00FF00}${upspeed wlan0} kb/s${color}  ${color 82BA00}${font sans:size=6}Down :${color}${font} ${color 00FF00}${downspeed wlan0} kb/s${color} ${color}${font sans:size=6}   SSID :${color}${font} ${color orange}${wireless_essid  wlan0}${color}   Signal: ${color orange}${wireless_link_qual_perc wlan0}%${endif}${else}Network Unavailable${endif}
+
+#thank's noobslab

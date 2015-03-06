@@ -1,0 +1,20 @@
+###########################
+########CODE-BE############
+###########################
+
+1. Etract all folder on your home and you can see file with name panelbar,rings and tab.
+2. Rename it 3 file to .panelbar, .rings and .tab (adding dot).
+3. You can run conky manually by open terminal and type ./ConkyBe.sh
+4. And now see the magic on your desktop ;)
+# You can change username and all customization like what you want
+
+# Autostart Conky-Tips
+1. press alt+f2
+2. then type gnome-session-properties
+3. now you can see pop up startup app, and then click add button
+4. add new starup app, fill the name
+5. In search box command click browse, and then locate to ConkyBe.sh
+6. Click add and restart your pc.
+7. Happy amazing your desktop B)
+
+./creatorb (@creatorbe) 
