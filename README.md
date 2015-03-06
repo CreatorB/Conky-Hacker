@@ -11,7 +11,6 @@ Conky Hacker
 * tab
 
 ## Doc
-#### Contact developer for more details
 * Homepage : http://creatorb.deviantart.com/art/Conky-Hacker-518375607
 
 ./creatorb
