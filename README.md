@@ -12,7 +12,7 @@ $ sudo apt-get update
 
 $ sudo apt-get install conky-manager
 
-##Available Conky Style
+## Available Conky Style
 * panel bar
 * rings
 * tab
